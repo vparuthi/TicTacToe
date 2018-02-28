@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.veraj.tictactoe.MainActivity">
+
+    <ImageView
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/board"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/b00"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/b11"
+        android:layout_toLeftOf="@+id/b01"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="57dp"
+        android:alpha="0"
+        android:background="@mipmap/x"
+        />
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/b01"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:background="@mipmap/x"
+        android:layout_alignBottom="@+id/b00" />
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/b02"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_toRightOf="@+id/b01"
+        android:layout_marginStart="50dp"
+        android:layout_alignTop="@+id/b01"
+        android:alpha="0"
+        android:background="@mipmap/x"
+        />
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/b10"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@id/b00"
+        android:layout_below="@id/b00"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/x"
+        android:alpha="0"/>
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/b11"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:background="@mipmap/x"
+        />
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/b12"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:background="@mipmap/x"
+        android:layout_alignBottom="@+id/b11"
+        android:layout_alignRight="@id/b02" />
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/b20"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/b00"
+        android:layout_alignBottom="@+id/b21"
+        android:alpha="0"
+        android:background="@mipmap/x"
+        />
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/b21"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignStart="@+id/b11"
+        android:layout_alignTop="@+id/b22"
+        android:alpha="0"
+        android:background="@mipmap/x" />
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/b22"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignStart="@+id/b12"
+        android:layout_below="@+id/b12"
+        android:layout_marginTop="68dp"
+        android:alpha="0"
+        android:background="@mipmap/x"
+        />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Player 1: 0"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player1"
+        android:layout_margin="10dp"
+        android:text="Player 2: 0"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:freezesText="true"/>
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/resetbutton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="@string/reset"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:freezesText="true"
+        android:id="@+id/againbutton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/b02"
+        android:layout_alignTop="@+id/player1"
+        android:text="Play Again"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_below="@+id/resetbutton"
+        android:layout_marginTop="60dp"/>
+
+</RelativeLayout>
